@@ -17,7 +17,7 @@ module Gyazo
 
     post '/' do
       id = request[:id]
-      data = request[:imagedata]
+      data = request[:imagedata][:tempfile].read
       hash = Digest::MD5.hexdigest(data).to_s
       dbm = SDBM.open(options.dbm_path, 0644)
       dbm[hash] = id

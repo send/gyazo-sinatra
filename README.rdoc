@@ -15,6 +15,6 @@ gyazo-sinatra is a Gyazo server ported on sinatra (The original server a.k.a upl
 == Copyright
 
 Copyright (c) 2011 SAKAI, Kazuaki. See LICENSE for
-Original upload.cgi Copyright 2009 Toshiyuki Masui.
 further details.
 
+Original upload.cgi Copyright (c) 2009 Toshiyuki Masui.

@@ -1,4 +1,4 @@
-= lingr4im
+= gyazo-sinatra
 
 gyazo-sinatra is a Gyazo server ported on sinatra (The original server a.k.a upload.cgi written by Toshiyuki Masui.)
 

@@ -1,5 +1,3 @@
-$KCODE = 'utf8'
-
 require 'rubygems'
 require 'sinatra'
 require 'rack'
@@ -21,7 +19,7 @@ module Gyazo
       hash = Digest::MD5.hexdigest(data).to_s
       dbm = SDBM.open(options.dbm_path, 0644)
       dbm[hash] = id
-      File.open("#{options.image_dir}/#{hash}.png", 'w').print(data)
+      File.open("#{options.image_dir}/#{hash}.png", 'w'){|f| f.write(data)}
 
       "#{options.image_url}/#{hash}.png"
     end

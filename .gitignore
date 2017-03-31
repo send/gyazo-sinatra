@@ -1,0 +1,5 @@
+coverage
+db/*
+vendor/bundle
+public/images/*.png
+.bundle

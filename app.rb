@@ -1,6 +1,5 @@
-require 'rubygems'
-require 'sinatra'
-require 'rack'
+# frozen_string_literal: true
+
 require 'digest/md5'
 require 'sdbm'
 
@@ -11,6 +10,7 @@ module Gyazo
       set :dbm_path, 'db/id'
       set :image_dir, 'public/images'
       set :image_url, 'http://gyazo.send.sh/images'
+      set :server, :puma
     end
 
     post '/' do
@@ -19,9 +19,9 @@ module Gyazo
       hash = Digest::MD5.hexdigest(data).to_s
       dbm = SDBM.open(options.dbm_path, 0644)
       dbm[hash] = id
-      File.open("#{options.image_dir}/#{hash}.png", 'w'){|f| f.write(data)}
+      File.write(File.join(settings.image_dir, "#{hash}.png"), data)
 
-      "#{options.image_url}/#{hash}.png"
+      "#{settings.image_url}/#{hash}.png"
     end
   end
 end

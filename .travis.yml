@@ -1,0 +1,8 @@
+sudo: false
+language: ruby
+rvm:
+- 2.4.1
+before_install: gem install bundler -v 1.14.6
+notifications:
+  slack:
+    secure: asLqe46poNqwGYHVOiftb8kyxOsriVq1t/MZZIhSChd2VmZOcydaTvu0wEILQA42/RkArt4VR3OlplqPjxrCbxNuAPYBJoir0e/0LvL7DP5K43Ufa8m4WS+MBpBBTNqm8H2MKMtRPN64YWOlrTVOCdS8XvviKZGh1+TQz+/VLkg=

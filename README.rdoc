@@ -1,6 +1,6 @@
 = gyazo-sinatra
 
-{rdoc-image:https://travis-ci.org/send/gyazo-sinatra.svg?branch=master}
+{https://travis-ci.org/send/gyazo-sinatra.svg?branch=master}
 
 gyazo-sinatra is a Gyazo server ported on sinatra (The original server a.k.a upload.cgi written by Toshiyuki Masui.)
 

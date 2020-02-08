@@ -51,7 +51,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    puma (3.8.2)
+    puma (3.12.2)
     pusher-client (0.6.2)
       json
       websocket (~> 1.0)

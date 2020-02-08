@@ -9,7 +9,7 @@ module Gyazo
     configure do
       set :dbm_path, 'db/id'
       set :image_dir, 'public/images'
-      set :image_url, 'http://gyazo.send.sh/images'
+      set :image_url, 'https://gyazo.send.sh/images'
       set :server, :puma
     end
 

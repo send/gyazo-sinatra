@@ -114,16 +114,17 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  capistrano (~> 3.6)
-  capistrano-bundler (~> 1.2)
+  capistrano
+  capistrano-bundler
   pry
   puma
   rack-test
   rspec
+  rspec-core
   rubocop
   simplecov
   sinatra
   travis
 
 BUNDLED WITH
-   1.14.6
+   1.17.2

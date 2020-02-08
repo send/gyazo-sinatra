@@ -6,14 +6,15 @@ gem 'sinatra'
 gem 'puma'
 
 group :development do
-  gem 'capistrano', '~> 3.6'
-  gem 'capistrano-bundler', '~> 1.2'
+  gem 'capistrano'
+  gem 'capistrano-bundler'
   gem 'pry'
 end
 
 group :development, :test do
   gem 'rack-test'
   gem 'rspec'
+  gem 'rspec-core'
   gem 'rubocop', require: false
   gem 'simplecov'
   gem 'travis'
